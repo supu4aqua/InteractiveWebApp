@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: lightcoral;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/* Home Page Design */
+
+.logo {
+    border-radius: 8px;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+header ul li {
+    padding: 10px 20px;
+    list-style: none;
+    text-align: center;
+    font-size: 15px;
+    display: inline;
+}
+
+header ul {
+    text-align: right;
+    margin-top: 50px
+}
+
+.quizStart {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+}
+
+.questionForm {
+    display: none;
+    width: 75%;
+}
+
+h1,
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button {
+    padding: 20px;
+    border: none;
+    background-color: black;
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 100px;
+    border-radius: 8px;
+}
+
+button:hover,
+button:focus {
+    background-color: grey;
+}
+
+main div {
+    margin: 0 auto;
+}
+
+.questionCount {
+    font-weight: bold;
+    margin-right: 50px;
+}
+
+main {
+    margin-top: 50px;
+}
+
+
+/* Form Design - Question Answers */
+
+fieldset {
+    border: none;
+    margin-left: 30px;
+}
+
+label:hover,
+label:focus {
+    background-color: grey;
+}
+
+label {
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    line-height: 30px;
+}
+
+input {
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    outline: none;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+input[type=radio] {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+h2 {
+    margin-bottom: 30px;
+}
+
+.submitButton,
+.nextButton,
+.restartButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feedback {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+/*
+.feedback img {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: black;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 20px
+}*/
+
+.right {
+    color: green;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.wrong {
+    color: blue;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.result h2 {
+    text-align: center;
+}
