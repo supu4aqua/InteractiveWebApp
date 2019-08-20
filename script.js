@@ -3,11 +3,14 @@ let score = 0;
 
 //generate question html
 function generateQuestion() {
+    //<h2 class="question">${DATA[questionNumber].question}</h2>
     if (questionNumber < DATA.length) {
         return `<div>
-    <h2 class="question">${DATA[questionNumber].question}</h2>
+    
       <form>
         <fieldset>
+        <label class="question">${DATA[questionNumber].question}
+        </label>
         <label>
           <input type="radio" value="${DATA[questionNumber].answers[0]}" name="answer" required>
             <span>${DATA[questionNumber].answers[0]}</span>
@@ -122,7 +125,16 @@ function showResult() {
 
 function restartQuiz() {
     $('main').on('click', '.restartButton', function(event) {
-        location.reload();
+        //location.reload();
+        questionNumber = 0;
+        $('.questionNumber').text(questionNumber + 1);
+
+        score = 0;
+        $('.score').text(score);
+
+        $('.questionForm').html(generateQuestion());
+
+
     });
 }
 
